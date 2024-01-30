@@ -1,0 +1,55 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true, "jest": true },
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  "ignorePatterns": ["dist", ".eslintrc.cjs", "*.test.js", "*.test.tsx"],
+
+  "plugins": ["@typescript-eslint", "react", "react-refresh", "prettier"],
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "no-unused-expressions": "off",
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".tsx"] }
+    ],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-no-target-blank": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-return": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}
