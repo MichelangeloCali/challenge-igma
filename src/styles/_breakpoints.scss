@@ -1,0 +1,32 @@
+//Breakpoints Variables:
+$mobile: 360px;
+$tablet: 1024px;
+$desktop: 1280px;
+$desktop-g: 1440px;
+
+@mixin media-size-up($size) {
+  // Mobile
+  @if $size == mobile {
+    @media (min-width: $mobile) {
+      @content;
+    }
+  }
+  // Tablet
+  @if $size == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  }
+  // Desktop
+  @else if $size == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+  // Desktop G
+  @else if $size == desktop-g {
+    @media (min-width: $desktop-g) {
+      @content;
+    }
+  }
+}

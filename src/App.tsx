@@ -1,9 +1,10 @@
 import './styles/styles.scss'
+import styles from './App.module.scss'
 
 function App() {
   return (
     <>
-      <div>Hey, its working</div>
+      <div className={styles.container}>Hey, its working</div>
     </>
   )
 }
