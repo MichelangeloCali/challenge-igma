@@ -1,0 +1,79 @@
+@import '../../styles/_variables.scss';
+
+.button {
+  height: $spacing-stack-md;
+  min-width: $spacing-stack-xxxl;
+  font-size: $font-size-xxs;
+  padding: 12px $spacing-stack-xxxs;
+
+  @include media-size-up(desktop-g) {
+    height: $spacing-stack-lg;
+    min-width: $spacing-stack-huge;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    padding: 12px $spacing-stack-xxs;
+  }
+
+  color: $color-base-light-contrast;
+  background-color: $color-base-dark-highlight;
+  border-radius: $border-radius-none;
+
+  &:focus {
+    border-width: $border-width-thin;
+    border-color: $color-primary-main;
+    background-color: $color-base-dark-main;
+  }
+
+  &:hover {
+    background-color: $color-base-dark-main;
+  }
+
+  &:active {
+    color: $color-base-light-secondary;
+  }
+
+  &:disabled {
+    color: $color-base-light-secondary;
+    background-color: $color-base-dark-disabled;
+    cursor: not-allowed;
+  }
+}
+
+.circular_button {
+  height: $spacing-stack-sm;
+  width: $spacing-stack-sm;
+
+  @include media-size-up(desktop-g) {
+    height: $spacing-stack-md;
+    width: $spacing-stack-md;
+  }
+
+  border-radius: $border-radius-pill;
+  background-color: $color-primary-main;
+
+  svg {
+    size: $spacing-stack-xxs;
+    color: $color-primary-contrast;
+  }
+
+  &:focus {
+    border-width: $border-width-thin;
+    border-color: $color-primary-contrast;
+    background-color: $color-primary-light;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &:active {
+    color: $color-primary-dark;
+  }
+
+  &:disabled {
+    color: $color-base-light-secondary;
+    background-color: $color-base-dark-disabled;
+    cursor: not-allowed;
+  }
+}
