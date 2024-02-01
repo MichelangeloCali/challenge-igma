@@ -1,3 +1,4 @@
 import { UserIcon } from './UserIcon'
+import { Logo } from './Logo'
 
-export { UserIcon }
+export { UserIcon, Logo }

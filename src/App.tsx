@@ -1,4 +1,4 @@
-import { Button } from '@/components'
+import { Header } from './components'
 
 import './styles/styles.scss'
 import styles from './App.module.scss'
@@ -6,8 +6,8 @@ import styles from './App.module.scss'
 function App() {
   return (
     <>
-      <div className={styles.container}>Hey, its working</div>
-      <Button circular />
+      <Header />
+      <main className={styles.content}>Hey, its working</main>
     </>
   )
 }

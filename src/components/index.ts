@@ -1,4 +1,6 @@
+import { Header } from './Header'
+import { Section } from './Section'
 import { Button } from './Button'
-import { UserIcon } from './Svgs'
+import { UserIcon, Logo } from './Svgs'
 
-export { Button, UserIcon }
+export { Header, Section, Button, UserIcon, Logo }

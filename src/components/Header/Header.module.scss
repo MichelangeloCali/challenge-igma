@@ -1,0 +1,23 @@
+@import '../../styles/_variables.scss';
+
+.header {
+  height: $spacing-stack-xxl;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-background-01;
+  padding-right: $spacing-stack-xxs;
+
+  @include media-size-up(tablet) {
+    padding-right: $spacing-stack-sm;
+  }
+
+  @include media-size-up(desktop) {
+    padding-right: calc($spacing-stack-xxl - 8px);
+  }
+
+  @include media-size-up(desktop-g) {
+    padding-right: calc($spacing-stack-huge - 12px);
+  }
+}

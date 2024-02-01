@@ -1,8 +1,14 @@
 @import './styles/_variables.scss';
 
-.container {
+.content {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: $spacing-stack-xxs;
+  margin-right: $spacing-stack-xxs;
   background-color: $color-background-01;
-  padding: 0 $spacing-stack-xxs;
 
   @include media-size-up(desktop) {
     padding: 0 $spacing-stack-xs;
