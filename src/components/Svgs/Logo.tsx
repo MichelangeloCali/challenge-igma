@@ -1,4 +1,4 @@
-export const Logo = () => {
+export const Logo = ({ ...props }) => {
   return (
     <svg
       width="80"
@@ -7,6 +7,8 @@ export const Logo = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-label="Logo"
+      aria-describedby="Logo servindo como design para cabeçalho"
+      {...props}
     >
       <g clipPath="url(#clip0_644_85)">
         <path

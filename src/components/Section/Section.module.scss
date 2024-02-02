@@ -1,0 +1,21 @@
+@import '../../styles/_variables.scss';
+
+.principal_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include media-size-up(tablet) {
+    flex-direction: row;
+    height: 504px;
+    margin-top: $spacing-stack-xxl;
+  }
+
+  @include media-size-up(desktop) {
+    height: 800px;
+  }
+
+  @include media-size-up(desktop-g) {
+    height: 900px;
+  }
+}

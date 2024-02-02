@@ -1,0 +1,128 @@
+@import '../../../styles/_variables.scss';
+
+.content_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include media-size-up(tablet) {
+    order: 2;
+    margin: 0 calc($spacing-stack-xxl + 16px) calc($spacing-stack-xxxl + 10px)
+      $spacing-stack-xxl;
+  }
+
+  h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: $spacing-inline-nano;
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    text-align: left;
+    color: $color-base-dark-main;
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-md;
+      gap: $spacing-inline-xxxs;
+    }
+  }
+
+  h1 {
+    margin: $spacing-stack-xl 0 $spacing-stack-xs 0;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-sm;
+    text-align: left;
+    color: $color-base-dark-highlight;
+
+    @include media-size-up(tablet) {
+      width: 16ch;
+    }
+
+    @include media-size-up(desktop) {
+      font-size: $font-size-xl;
+      margin-bottom: $spacing-stack-md;
+      width: 20ch;
+    }
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-xxl;
+    }
+  }
+
+  h3 {
+    margin: 0 0 $spacing-stack-xxl 0;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    text-align: left;
+    color: $color-base-dark-main;
+
+    @include media-size-up(tablet) {
+      margin: 0;
+      width: 34ch;
+    }
+
+    @include media-size-up(desktop) {
+      font-size: $font-size-md;
+      width: 32ch;
+    }
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-lg;
+      width: 30ch;
+    }
+  }
+}
+
+.content_img {
+  position: relative;
+
+  @include media-size-up(tablet) {
+    margin-left: $spacing-stack-xl;
+  }
+
+  img {
+    max-height: 504px;
+    width: 100%;
+    object-fit: cover;
+
+    @include media-size-up(tablet) {
+      height: 504px;
+      width: 304px;
+    }
+
+    @include media-size-up(desktop) {
+      max-height: none;
+      height: 680px;
+      width: 422px;
+    }
+
+    @include media-size-up(desktop-g) {
+      height: 780px;
+      width: 525px;
+    }
+  }
+
+  .detail_image {
+    position: absolute;
+    left: -18px;
+    top: 180px;
+
+    @include media-size-up(tablet) {
+      left: -20px;
+      top: 180px;
+    }
+
+    @include media-size-up(desktop) {
+      left: -20px;
+      top: 270px;
+    }
+
+    @include media-size-up(desktop-g) {
+      left: -20px;
+      top: 300px;
+    }
+  }
+}

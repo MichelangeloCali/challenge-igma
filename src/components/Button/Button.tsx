@@ -15,6 +15,7 @@ export const Button = ({
   text,
   photo,
   disabled,
+  ...props
 }: ButtonPropsType) => {
   if (circular) {
     return (
@@ -30,9 +31,10 @@ export const Button = ({
 
   return (
     <button
-      className={styles.button}
       disabled={disabled}
       aria-label="Assinar Newsletter"
+      className={styles.button}
+      {...props}
     >
       {text}
     </button>
