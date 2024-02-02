@@ -1,0 +1,52 @@
+@import '../../../styles/_variables.scss';
+
+.content_text {
+  display: flex;
+
+  @include media-size-up(tablet) {
+    width: 50%;
+    align-items: center;
+  }
+
+  p {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    text-align: left;
+    color: $color-base-dark-main;
+
+    @include media-size-up(tablet) {
+      width: 26ch;
+    }
+
+    @include media-size-up(desktop) {
+      font-size: $font-size-md;
+      width: 24ch;
+    }
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-lg;
+      width: 25ch;
+    }
+  }
+}
+
+.content_clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  @include media-size-up(tablet) {
+    width: 55%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media-size-up(desktop) {
+    column-gap: 60px;
+  }
+
+  @include media-size-up(desktop-g) {
+    column-gap: 105px;
+  }
+}

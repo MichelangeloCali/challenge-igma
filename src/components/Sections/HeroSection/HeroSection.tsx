@@ -5,17 +5,15 @@ import styles from './HeroSection.module.scss'
 
 export const HeroSection = () => {
   return (
-    <Section ariaLabel="Seção principal">
+    <Section ariaLabel="Seção principal" style={{ backgroundColor: '#a3a3' }}>
       <div className={styles.content_text}>
         <h2>
           Prazer, somos
           <LogoIgma />
         </h2>
-
         <h1>
           Acreditamos em um mundo onde experiências incríveis são essenciais.
         </h1>
-
         <h3>
           Unimos design e tecnologia para resolver problemas complexos de
           empresas. Criamos produtos digitais que revolucionam o relacionamento
@@ -24,12 +22,14 @@ export const HeroSection = () => {
       </div>
 
       <div className={styles.content_img}>
-        <img
-          src={imageMobile}
-          alt="Foto do magma vulcânico"
-          aria-describedby="A foto ilusta o significado de nossa marca que é junção de duas palavras em Latim: Ígma e Magma"
-        />
-        <DetailImage className={styles.detail_image} />
+        <div className={styles.image}>
+          <DetailImage className={styles.detail_image} />
+          <img
+            src={imageMobile}
+            alt="Foto do magma vulcânico"
+            aria-describedby="A foto ilusta o significado de nossa marca que é junção de duas palavras em Latim: Ígma e Magma"
+          />
+        </div>
       </div>
     </Section>
   )

@@ -1,6 +1,43 @@
-import { Header } from './Header'
 import { Section } from './Section'
 import { Button } from './Button'
-import { UserIcon, Logo, LogoIgma, DetailImage } from './Svgs'
+import { Header } from './Header'
+import { HeroSection, ClientsSection } from './Sections'
+import {
+  UserIcon,
+  Logo,
+  LogoIgma,
+  DetailImage,
+  Client1Mrv,
+  Client2Idb,
+  Client3Bayer,
+  Client4Centauro,
+  Client5Google,
+  Client6Ambev,
+  Client7BrasilPrev,
+  Client8Comgas,
+  Client9Cvc,
+  Client10Neoenergia,
+  Client11Honda,
+  Client12SirioLibanes,
+} from './Svgs'
 
-export { Header, Section, Button, UserIcon, Logo, LogoIgma, DetailImage }
+export { Section, Button, Header, HeroSection, ClientsSection }
+
+export {
+  UserIcon,
+  Logo,
+  LogoIgma,
+  DetailImage,
+  Client1Mrv,
+  Client2Idb,
+  Client3Bayer,
+  Client4Centauro,
+  Client5Google,
+  Client6Ambev,
+  Client7BrasilPrev,
+  Client8Comgas,
+  Client9Cvc,
+  Client10Neoenergia,
+  Client11Honda,
+  Client12SirioLibanes,
+}

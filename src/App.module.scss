@@ -6,15 +6,5 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: $spacing-stack-xxs;
-  margin-right: $spacing-stack-xxs;
   background-color: $color-background-01;
-
-  @include media-size-up(desktop) {
-    padding: 0 $spacing-stack-xs;
-  }
-
-  @include media-size-up(desktop-g) {
-    padding: 0 $spacing-stack-sm;
-  }
 }

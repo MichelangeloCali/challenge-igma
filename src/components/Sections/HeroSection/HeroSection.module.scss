@@ -1,31 +1,12 @@
 @import '../../../styles/_variables.scss';
 
 .content_text {
-  width: 100%;
   display: flex;
   flex-direction: column;
 
   @include media-size-up(tablet) {
+    width: 50%;
     order: 2;
-    margin: 0 calc($spacing-stack-xxl + 16px) calc($spacing-stack-xxxl + 10px)
-      $spacing-stack-xxl;
-  }
-
-  h2 {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: $spacing-inline-nano;
-    font-size: $font-size-xxs;
-    font-weight: $font-weight-medium;
-    line-height: $line-height-sm;
-    text-align: left;
-    color: $color-base-dark-main;
-
-    @include media-size-up(desktop-g) {
-      font-size: $font-size-md;
-      gap: $spacing-inline-xxxs;
-    }
   }
 
   h1 {
@@ -48,6 +29,23 @@
 
     @include media-size-up(desktop-g) {
       font-size: $font-size-xxl;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: $spacing-inline-nano;
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    text-align: left;
+    color: $color-base-dark-main;
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-md;
+      gap: $spacing-inline-xxxs;
     }
   }
 
@@ -77,10 +75,33 @@
 }
 
 .content_img {
-  position: relative;
-
+  max-height: 504px;
+  width: 100%;
+  text-align: center;
   @include media-size-up(tablet) {
-    margin-left: $spacing-stack-xl;
+    width: 50%;
+  }
+
+  .image {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @include media-size-up(tablet) {
+      height: 504px;
+      width: 304px;
+    }
+
+    @include media-size-up(desktop) {
+      max-height: none;
+      height: 680px;
+      width: 422px;
+    }
+
+    @include media-size-up(desktop-g) {
+      height: 780px;
+      width: 525px;
+    }
   }
 
   img {

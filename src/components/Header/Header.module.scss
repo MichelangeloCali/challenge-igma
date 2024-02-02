@@ -1,6 +1,7 @@
 @import '../../styles/_variables.scss';
 
 .header {
+  margin-bottom: $spacing-stack-xxs;
   height: $spacing-stack-xxl;
   width: 100vw;
   display: flex;
@@ -10,6 +11,7 @@
   padding-right: $spacing-stack-xxs;
 
   @include media-size-up(tablet) {
+    margin-bottom: $spacing-stack-xxl;
     padding-right: $spacing-stack-sm;
   }
 

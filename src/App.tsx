@@ -1,8 +1,7 @@
-import { Header } from './components'
+import { ClientsSection, Header, HeroSection } from '@/components'
 
 import './styles/styles.scss'
 import styles from './App.module.scss'
-import { HeroSection } from './components/Sections/HeroSection/HeroSection'
 
 function App() {
   return (
@@ -10,6 +9,7 @@ function App() {
       <Header />
       <main className={styles.content}>
         <HeroSection />
+        <ClientsSection />
       </main>
     </>
   )

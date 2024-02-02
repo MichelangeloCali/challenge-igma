@@ -1,21 +1,30 @@
 @import '../../styles/_variables.scss';
 
 .principal_section {
+  width: calc(100% - (2 * $spacing-stack-xxs));
+  margin: 0 $spacing-stack-xxs $spacing-stack-xxl $spacing-stack-xxs;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   @include media-size-up(tablet) {
+    width: calc(100% - (2 * $spacing-stack-sm));
+    margin: 0 $spacing-stack-sm $spacing-stack-xxl $spacing-stack-sm;
     flex-direction: row;
     height: 504px;
-    margin-top: $spacing-stack-xxl;
   }
 
   @include media-size-up(desktop) {
-    height: 800px;
+    width: calc(100% - (2 * $spacing-stack-xxl));
+    margin: 0 calc($spacing-stack-xxl - 8px) $spacing-stack-xxl
+      calc($spacing-stack-xxl - 8px);
+    height: 680px;
   }
 
   @include media-size-up(desktop-g) {
-    height: 900px;
+    width: calc(100% - (2 * $spacing-stack-xxl + 12px));
+    margin: 0 calc($spacing-stack-xxl + 12px) $spacing-stack-xxl
+      calc($spacing-stack-xxl + 12px);
+    height: 780px;
   }
 }
