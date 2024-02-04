@@ -4,6 +4,11 @@ import { zodResolver } from '@hookform/resolvers/zod'
 
 import { createNewsLetterFormData, newsletterFormSchema } from '@/utils'
 import { Button, Input, Section } from '@/components'
+import img from '../../../assets/phones-animation.png'
+import verticalImg1 from '../../../assets/vertical-phone-animation-1.png'
+import verticalImg3 from '../../../assets/vertical-phone-animation-3.png'
+import verticalImg2 from '../../../assets/vertical-phone-animation-2.png'
+import verticalImg4 from '../../../assets/vertical-phone-animation-4.png'
 
 import styles from './NewsletterSection.module.scss'
 
@@ -51,7 +56,27 @@ export const NewsletterSection = () => {
         <Button text="Assinar Newsletter" type="submit" />
       </form>
 
-      <div className={styles.animation}></div>
+      <div className={styles.animation}>
+        <div className={styles.horizontal}>
+          <img src={img} alt="" />
+        </div>
+
+        <div className={styles.vertical_1}>
+          <img src={verticalImg1} alt="" />
+        </div>
+
+        <div className={styles.vertical_2}>
+          <img src={verticalImg2} alt="" />
+        </div>
+
+        <div className={styles.vertical_3}>
+          <img src={verticalImg3} alt="" />
+        </div>
+
+        <div className={styles.vertical_4}>
+          <img src={verticalImg4} alt="" />
+        </div>
+      </div>
     </Section>
   )
 }

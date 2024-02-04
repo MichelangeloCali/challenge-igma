@@ -21,12 +21,13 @@
   padding-top: 10px;
 
   @include media-size-up(tablet) {
-    font-size: $font-size-md;
     height: $spacing-stack-lg;
+    padding-left: $spacing-stack-xl;
   }
 
-  @include media-size-up(desktop) {
-    height: $spacing-stack-xl;
+  @include media-size-up(desktop-g) {
+    padding-left: calc($spacing-stack-xxl + 10px);
+    font-size: $font-size-md;
   }
 
   &:hover {
@@ -75,6 +76,11 @@
   color: $color-base-dark-main;
 
   @include media-size-up(tablet) {
+    bottom: 14px;
+  }
+
+  @include media-size-up(desktop-g) {
     font-size: $font-size-md;
+    bottom: 10px;
   }
 }

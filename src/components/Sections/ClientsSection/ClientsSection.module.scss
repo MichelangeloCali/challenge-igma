@@ -2,6 +2,7 @@
 
 .content_text {
   display: flex;
+  margin: 0 $spacing-stack-xxs 0 $spacing-stack-xxs;
 
   @include media-size-up(tablet) {
     width: 50%;
@@ -17,6 +18,7 @@
 
     @include media-size-up(tablet) {
       width: 26ch;
+      font-size: $font-size-xs;
     }
 
     @include media-size-up(desktop) {

@@ -3,6 +3,7 @@
 .content_text {
   display: flex;
   flex-direction: column;
+  margin: 0 $spacing-stack-xxs 0 $spacing-stack-xxs;
 
   @include media-size-up(tablet) {
     width: 50%;
@@ -77,6 +78,7 @@
 .content_img {
   max-height: 504px;
   width: 100%;
+  padding-left: $spacing-stack-xxs;
   text-align: center;
   @include media-size-up(tablet) {
     width: 50%;

@@ -1,6 +1,13 @@
 @import '../../../styles/_variables.scss';
 
 .form {
+  margin: 0 $spacing-stack-xxs $spacing-stack-xxl $spacing-stack-xxs;
+
+  @include media-size-up(tablet) {
+    align-self: center;
+    width: 45%;
+  }
+
   h3 {
     font-size: $font-size-xxs;
     font-weight: $font-weight-medium;
@@ -8,6 +15,14 @@
     text-align: left;
     color: $color-base-dark-main;
     margin: 0 0 $spacing-stack-md 0;
+
+    @include media-size-up(desktop) {
+      font-size: $font-size-xs;
+    }
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-md;
+    }
   }
 
   p {
@@ -18,8 +33,16 @@
     color: $color-base-dark-main;
     margin: 0 0 $spacing-stack-md 0;
 
+    @include media-size-up(tablet) {
+      width: 25ch;
+    }
+
     @include media-size-up(desktop) {
-      font-size: $font-size-sm;
+      font-size: $font-size-md;
+    }
+
+    @include media-size-up(desktop-g) {
+      font-size: $font-size-lg;
     }
   }
 
@@ -37,7 +60,139 @@
   flex-direction: column;
   gap: $spacing-stack-xxs;
   margin: $spacing-stack-md 0 $spacing-stack-lg 0;
+
+  @include media-size-up(tablet) {
+    width: 70%;
+  }
+
+  @include media-size-up(desktop) {
+    width: 75%;
+  }
+
+  @include media-size-up(desktop-g) {
+    width: 80%;
+  }
 }
 
 .animation {
+  width: 100%;
+  height: 237px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+
+  .horizontal {
+    height: 237px;
+    width: 1590px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0);
+    animation: moveImages 9s linear infinite;
+    img {
+      height: 100%;
+    }
+  }
+
+  .vertical_1,
+  .vertical_2,
+  .vertical_3,
+  .vertical_4 {
+    display: none;
+  }
+
+  @keyframes moveImages {
+    100% {
+      transform: translateX(-70%);
+    }
+  }
+
+  @include media-size-up(tablet) {
+    width: 55%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: $spacing-stack-xxs;
+
+    .horizontal {
+      display: none;
+    }
+
+    .vertical_1,
+    .vertical_2,
+    .vertical_3,
+    .vertical_4 {
+      display: block;
+      width: 100%;
+      transform: translate3d(0, 0, 0);
+      img {
+        width: 100%;
+      }
+    }
+    .vertical_1 {
+      height: 1110px;
+      animation: moveImages 20s linear infinite;
+    }
+
+    .vertical_2 {
+      height: 1485px;
+      animation: moveImages 15s linear infinite;
+    }
+
+    .vertical_3 {
+      height: 1110px;
+      animation: moveImages 19s linear infinite;
+    }
+
+    .vertical_4 {
+      height: 1110px;
+      animation: moveImages 17s linear infinite;
+    }
+
+    @keyframes moveImages {
+      100% {
+        transform: translateY(-70%);
+      }
+    }
+  }
+
+  @include media-size-up(desktop) {
+    .vertical_1 {
+      height: 1345px;
+    }
+
+    .vertical_2 {
+      height: 1790px;
+    }
+
+    .vertical_3 {
+      height: 1345px;
+    }
+
+    .vertical_4 {
+      height: 1345px;
+    }
+  }
+
+  @include media-size-up(desktop-g) {
+    .vertical_1 {
+      height: 2220px;
+    }
+
+    .vertical_2 {
+      height: 2960px;
+    }
+
+    .vertical_3 {
+      height: 2220px;
+    }
+
+    .vertical_4 {
+      height: 2220px;
+    }
+  }
 }

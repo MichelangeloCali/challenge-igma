@@ -67,7 +67,9 @@ export const ClientsSection = () => {
       </div>
 
       <div className={styles.content_clients}>
-        {clients.map((item) => item.client)}
+        {clients.map((item, index) => {
+          return <div key={index}>{item.client}</div>
+        })}
       </div>
     </Section>
   )

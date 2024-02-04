@@ -1,8 +1,8 @@
 @import '../../styles/_variables.scss';
 
 .principal_section {
-  width: calc(100% - (2 * $spacing-stack-xxs));
-  margin: 0 $spacing-stack-xxs $spacing-stack-xxl $spacing-stack-xxs;
+  width: 100%;
+  margin: 0 0 $spacing-stack-xxl 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,7 @@
 
   @include media-size-up(desktop-g) {
     width: calc(100% - (2 * $spacing-stack-xxl + 12px));
+    width: calc(1600px - (2 * $spacing-stack-xxl + 12px));
     margin: 0 calc($spacing-stack-xxl + 12px) $spacing-stack-xxl
       calc($spacing-stack-xxl + 12px);
     height: 780px;
