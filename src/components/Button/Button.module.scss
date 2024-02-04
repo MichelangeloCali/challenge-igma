@@ -57,6 +57,15 @@
     color: $color-primary-contrast;
   }
 
+  img {
+    width: $spacing-stack-sm;
+    border-radius: $border-radius-pill;
+
+    @include media-size-up(desktop-g) {
+      width: $spacing-stack-md;
+    }
+  }
+
   &:focus {
     border-width: $border-width-thin;
     border-color: $color-primary-contrast;

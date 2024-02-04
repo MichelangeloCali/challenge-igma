@@ -20,6 +20,7 @@
     "prepush": "npm run test"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
     "@hookform/resolvers": "^3.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

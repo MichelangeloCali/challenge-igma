@@ -1,4 +1,6 @@
 import { ButtonHTMLAttributes } from 'react'
+import { useAuth0 } from '@auth0/auth0-react'
+
 import { UserIcon } from '../Svgs'
 
 import styles from './Button.module.scss'
@@ -6,25 +8,30 @@ import styles from './Button.module.scss'
 type ButtonPropsType = {
   circular?: boolean
   text?: string
-  photo?: string
+  login?: () => void
   disabled?: boolean
 } & ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = ({
   circular = false,
   text,
-  photo,
+  login,
   disabled,
   ...props
 }: ButtonPropsType) => {
+  const { isAuthenticated, user } = useAuth0()
+
+  const photo = user?.picture
+
   if (circular) {
     return (
       <button
         className={styles.circular_button}
         disabled={disabled}
         aria-label={photo ? 'Foto Perfil' : 'Botão de Login'}
+        onClick={login}
       >
-        {photo ? <img src={photo} alt="User" /> : <UserIcon />}
+        {isAuthenticated ? <img src={photo} alt="User" /> : <UserIcon />}
       </button>
     )
   }
