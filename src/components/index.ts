@@ -2,6 +2,7 @@ import { Section } from './Section'
 import { Button } from './Button'
 import { Header } from './Header'
 import { Input } from './Input'
+import { Footer } from './Footer'
 import { HeroSection, ClientsSection, NewsletterSection } from './Sections'
 import {
   UserIcon,
@@ -30,6 +31,7 @@ export {
   HeroSection,
   ClientsSection,
   NewsletterSection,
+  Footer,
 }
 
 export {

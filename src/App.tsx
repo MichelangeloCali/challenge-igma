@@ -1,5 +1,6 @@
 import {
   ClientsSection,
+  Footer,
   Header,
   HeroSection,
   NewsletterSection,
@@ -17,6 +18,7 @@ function App() {
         <ClientsSection />
         <NewsletterSection />
       </main>
+      <Footer />
     </>
   )
 }
