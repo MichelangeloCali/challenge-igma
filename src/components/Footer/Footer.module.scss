@@ -1,0 +1,28 @@
+@import '../../styles/_variables.scss';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 $spacing-stack-xxs $spacing-stack-xxl $spacing-stack-xxs;
+  border-top: $border-width-hairline solid $color-primary-contrast;
+  font-size: $font-size-xxs;
+
+  @include media-size-up(tablet) {
+    margin-left: $spacing-stack-sm;
+    margin-right: $spacing-stack-sm;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include media-size-up(desktop) {
+    margin-left: calc($spacing-stack-xxl - 8px);
+    margin-right: calc($spacing-stack-xxl - 8px);
+    font-size: $font-size-xs;
+  }
+
+  @include media-size-up(desktop-g) {
+    width: calc(1600px - (2 * $spacing-stack-xxl + 12px));
+    margin: 0 auto $spacing-stack-xxl auto;
+    font-size: $font-size-md;
+  }
+}

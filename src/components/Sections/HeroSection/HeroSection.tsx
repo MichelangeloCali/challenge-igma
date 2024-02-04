@@ -5,7 +5,7 @@ import styles from './HeroSection.module.scss'
 
 export const HeroSection = () => {
   return (
-    <Section ariaLabel="Seção principal" style={{ backgroundColor: '#a3a3' }}>
+    <Section ariaLabel="Seção principal">
       <div className={styles.content_text}>
         <h2>
           Prazer, somos

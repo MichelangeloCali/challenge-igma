@@ -57,7 +57,7 @@ export const ClientsSection = () => {
   ]
 
   return (
-    <Section ariaLabel="Seção de clientes" style={{ backgroundColor: '#ccc' }}>
+    <Section ariaLabel="Seção de clientes">
       <div className={styles.content_text}>
         <p>
           Expressamos mais de 20 anos de experiência criando plataformas

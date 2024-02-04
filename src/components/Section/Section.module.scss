@@ -22,7 +22,6 @@
   }
 
   @include media-size-up(desktop-g) {
-    width: calc(100% - (2 * $spacing-stack-xxl + 12px));
     width: calc(1600px - (2 * $spacing-stack-xxl + 12px));
     margin: 0 calc($spacing-stack-xxl + 12px) $spacing-stack-xxl
       calc($spacing-stack-xxl + 12px);

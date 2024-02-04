@@ -58,23 +58,23 @@ export const NewsletterSection = () => {
 
       <div className={styles.animation}>
         <div className={styles.horizontal}>
-          <img src={img} alt="" />
+          <img src={img} alt="Nossos ultimos trabalhos" />
         </div>
 
         <div className={styles.vertical_1}>
-          <img src={verticalImg1} alt="" />
+          <img src={verticalImg1} alt="Nossos ultimos trabalhos" />
         </div>
 
         <div className={styles.vertical_2}>
-          <img src={verticalImg2} alt="" />
+          <img src={verticalImg2} alt="Nossos ultimos trabalhos" />
         </div>
 
         <div className={styles.vertical_3}>
-          <img src={verticalImg3} alt="" />
+          <img src={verticalImg3} alt="Nossos ultimos trabalhos" />
         </div>
 
         <div className={styles.vertical_4}>
-          <img src={verticalImg4} alt="" />
+          <img src={verticalImg4} alt="Nossos ultimos trabalhos" />
         </div>
       </div>
     </Section>
