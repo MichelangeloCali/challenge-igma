@@ -16,10 +16,12 @@
   }
 
   @include media-size-up(desktop) {
-    padding-right: calc($spacing-stack-xxl - 8px);
+    padding-right: calc($spacing-stack-lg - 8px);
   }
 
   @include media-size-up(desktop-g) {
-    padding-right: calc($spacing-stack-huge - 12px);
+    padding-right: $spacing-stack-xxxl;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
