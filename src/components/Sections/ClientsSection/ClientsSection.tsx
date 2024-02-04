@@ -17,6 +17,45 @@ import {
 import styles from './ClientsSection.module.scss'
 
 export const ClientsSection = () => {
+  const clients = [
+    {
+      client: <Client1Mrv />,
+    },
+    {
+      client: <Client7BrasilPrev />,
+    },
+    {
+      client: <Client2Idb />,
+    },
+    {
+      client: <Client8Comgas />,
+    },
+    {
+      client: <Client3Bayer />,
+    },
+    {
+      client: <Client9Cvc />,
+    },
+    {
+      client: <Client4Centauro />,
+    },
+    {
+      client: <Client10Neoenergia />,
+    },
+    {
+      client: <Client5Google />,
+    },
+    {
+      client: <Client11Honda />,
+    },
+    {
+      client: <Client6Ambev />,
+    },
+    {
+      client: <Client12SirioLibanes />,
+    },
+  ]
+
   return (
     <Section ariaLabel="Seção de clientes" style={{ backgroundColor: '#ccc' }}>
       <div className={styles.content_text}>
@@ -28,18 +67,7 @@ export const ClientsSection = () => {
       </div>
 
       <div className={styles.content_clients}>
-        <Client1Mrv />
-        <Client7BrasilPrev />
-        <Client2Idb />
-        <Client8Comgas />
-        <Client3Bayer />
-        <Client9Cvc />
-        <Client4Centauro />
-        <Client10Neoenergia />
-        <Client5Google />
-        <Client11Honda />
-        <Client6Ambev />
-        <Client12SirioLibanes />
+        {clients.map((item) => item.client)}
       </div>
     </Section>
   )

@@ -1,0 +1,80 @@
+@import '../../styles/_variables.scss';
+
+.inputContent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input {
+  height: $spacing-stack-md;
+  color: $color-base-dark-highlight;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-base;
+  line-height: $line-height-xl;
+  background-color: No color;
+  border: none;
+  border-bottom: 2px solid;
+  border-color: $color-base-dark-highlight;
+  padding-left: $spacing-stack-xl;
+  padding-top: 10px;
+
+  @include media-size-up(tablet) {
+    font-size: $font-size-md;
+    height: $spacing-stack-lg;
+  }
+
+  @include media-size-up(desktop) {
+    height: $spacing-stack-xl;
+  }
+
+  &:hover {
+    border-bottom: 3px solid;
+  }
+
+  &:focus {
+    border: 1px solid;
+    border-bottom: 3px solid;
+    outline-color: $color-primary-light;
+  }
+
+  &:active {
+    font-weight: $font-weight-semibold;
+  }
+
+  &:disabled {
+    border-color: $color-base-dark-disabled;
+    color: $color-base-dark-disabled;
+    cursor: not-allowed;
+  }
+}
+
+.input.error {
+  border-color: $color-error-main;
+  color: $color-error-dark;
+}
+
+.text_error {
+  position: absolute;
+  bottom: -20px;
+  color: $color-error-dark;
+  font-size: $font-size-xxxs;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-lg;
+  margin-top: 2px;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+  display: block;
+  font-size: $font-size-xs;
+  font-weight: 500;
+  color: $color-base-dark-main;
+
+  @include media-size-up(tablet) {
+    font-size: $font-size-md;
+  }
+}

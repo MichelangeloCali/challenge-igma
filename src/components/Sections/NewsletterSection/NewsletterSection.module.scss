@@ -1,0 +1,46 @@
+@import '../../../styles/_variables.scss';
+
+.form {
+  h3 {
+    font-size: $font-size-xxs;
+    font-weight: $font-weight-medium;
+    line-height: $line-height-sm;
+    text-align: left;
+    color: $color-base-dark-main;
+    margin: 0 0 $spacing-stack-md 0;
+  }
+
+  p {
+    font-size: $font-size-xs;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-lg;
+    text-align: left;
+    color: $color-base-dark-main;
+    margin: 0 0 $spacing-stack-md 0;
+
+    @include media-size-up(desktop) {
+      font-size: $font-size-sm;
+    }
+  }
+
+  label {
+  }
+
+  #name {
+    margin: 0 0 $spacing-stack-xxs 0;
+  }
+
+  #email {
+    margin: 0 0 $spacing-stack-lg 0;
+  }
+}
+
+.inputContent {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-stack-xxs;
+  margin: $spacing-stack-md 0 $spacing-stack-lg 0;
+}
+
+.animation {
+}

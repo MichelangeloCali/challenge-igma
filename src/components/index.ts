@@ -1,7 +1,8 @@
 import { Section } from './Section'
 import { Button } from './Button'
 import { Header } from './Header'
-import { HeroSection, ClientsSection } from './Sections'
+import { Input } from './Input'
+import { HeroSection, ClientsSection, NewsletterSection } from './Sections'
 import {
   UserIcon,
   Logo,
@@ -21,7 +22,15 @@ import {
   Client12SirioLibanes,
 } from './Svgs'
 
-export { Section, Button, Header, HeroSection, ClientsSection }
+export {
+  Section,
+  Button,
+  Header,
+  Input,
+  HeroSection,
+  ClientsSection,
+  NewsletterSection,
+}
 
 export {
   UserIcon,
