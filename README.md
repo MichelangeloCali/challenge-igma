@@ -62,6 +62,7 @@ Você pode conferir o desafio deployado na Vercel
 - Foi instalado Vitest e React Testing Library com a intenção de realizar testes unitários no App.tsx, no Button.tsx e no Input.tsx. Porém, infelizmente por falta de tempo, não foi realizado 100% da cobertura nesses componentes.
 - Ao realizar o cadastro na Newsletter, os dados do Usuário são tratados, validados e em seguida, armazenado num state em memória, podendo ser utilizado para ou enviar para um Service que se comunica um alguma API de Mail (Sendgrid, Mailersend...) ou então serem salvos em algum Banco de Dados.
 - Foi integrado um Auth0 para um pequeno sistema de Login, o intuito foi deixar pronto esse sistema e no futuro, isolar em módulo, protegendo a aplicação caso um dia precise. Além disso, tornou-se dinâmica a captura de foto do usuário para a imagem do perfil, utilizando o Login Social dele.
+- Para ser logado com login social, clique na foto do ícone do perfil e você será renderizado para o Auth0 e escolher qual provider login deseja ser logado. 
 
 ## O que poderia ser melhorado:
 
