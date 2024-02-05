@@ -32,10 +32,10 @@ Você pode conferir o desafio deployado na Vercel
   └── /services
   └── /styles
   └── /utils
-  App.js
+  App.tsx
   App.module.scss
   App.spec.tsx
-  main.js
+  main.tsx
 ```
 
 ## Para rodar localmente o repositório: 
